@@ -2,8 +2,8 @@ import React from 'react'
 import { AuthLayout } from './AuthLayout'
 import { Link } from 'react-router-dom'
 import { useForm } from 'react-hook-form'
-import { api } from '../services/apiServices'
 import { toast, ToastContainer } from 'react-toastify'
+import { authServices } from '../services/authServices'
 
 export const LoginForm = () => {
 
@@ -16,7 +16,7 @@ export const LoginForm = () => {
 
     const userLogin = async (user) => {
         try {
-            let response = await api.post('/auth/log-in', user, { withCredentials: true })
+            let response = await authServices.login(user, { withCredentials: true },)
             console.log(response);
 
             if (response.status === 200) toast.success(`Bienvenido`);

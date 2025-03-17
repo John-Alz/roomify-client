@@ -2,8 +2,9 @@ import React from 'react'
 import { AuthLayout } from './AuthLayout'
 import { data, Link } from 'react-router-dom'
 import { useForm } from 'react-hook-form'
-import { api } from '../services/apiServices'
 import { toast, ToastContainer } from 'react-toastify'
+import { api } from '../../../shared/api/apiClient'
+import { authServices } from '../services/authServices'
 
 export const SignUpForm = () => {
 
@@ -12,7 +13,7 @@ export const SignUpForm = () => {
     } = useForm();
 
     const userSignUp = async (user) => {
-        let response = await api.post('/auth/sign-up', user)
+        let response = await authServices.register(user)
         console.log(response);
         if (response.status === 201) {
             toast.success(`Usuario creado`)
