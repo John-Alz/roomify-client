@@ -83,7 +83,7 @@ export const SignUpForm = () => {
                     </div>
                     <div className='flex flex-col'>
                         <label className='mb-1'>Contraseña</label>
-                        <input className='border border-gray-custom py-2 px-3 rounded-lg' type='password' name='password' placeholder='mínimo 8 caracteres'
+                        <input className='border border-gray-custom py-2 px-3 rounded-lg' type='password' name='password' placeholder='mínimo 6 caracteres'
                             {...register("password", {
                                 required: {
                                     value: true,
@@ -99,7 +99,7 @@ export const SignUpForm = () => {
                     </div>
                     <div className='flex flex-col'>
                         <label className='mb-1'>Confirmar contraseña</label>
-                        <input className='border border-gray-custom py-2 px-3 rounded-lg' type='password' name='confirmPassword' placeholder='mínimo 8 caracteres'
+                        <input className='border border-gray-custom py-2 px-3 rounded-lg' type='password' name='confirmPassword' placeholder='mínimo 6 caracteres'
                             {...register("confirmPassword", {
                                 required: {
                                     value: true,
@@ -111,7 +111,7 @@ export const SignUpForm = () => {
                         {errors.confirmPassword && <span className='text-red-400 text-xs'>{errors.confirmPassword.message}</span>}
                     </div>
                 </div>
-                <button className='w-full py-2 px-3 rounded-lg text-xl bg-primary cursor-pointer my-4'>Registrate</button>
+                <button className='w-full py-2 px-3 rounded-lg text-xl bg-primary cursor-pointer my-4 text-white'>Registrate</button>
 
 
                 <div className='flex mt-6 justify-center'>

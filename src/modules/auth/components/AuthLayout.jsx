@@ -7,7 +7,7 @@ export const AuthLayout = ({ children }) => {
                 {children}
             </div>
             <div className='w-[50%] h-screen'>
-                <img className='rounded-3xl p-3' src={'/public/room-1.jpeg'} alt='img-art' />
+                <img className='rounded-3xl p-3 h-screen object-cover' src={'/public/room-3.webp'} alt='img-art' />
             </div>
         </div>
     )
