@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 export const Testimonials = () => {
   return (
     <section className="w-full bg-white py-12 flex flex-col mt-18 items-center text-center overflow-hidden">
-      <h2 className="text-xl font-bold text-gray-800 mb-6">
+      <h2 className="text-4xl font-bold text-gray-800 mb-6 mt-4" >
         Lo Que Opinan Nuestros Clientes.
       </h2>
 
       {/* Contenedor de testimonios con diseño centralizado */}
-      <div className="w-full max-w-5xl overflow-hidden relative mt-10 flex justify-center">
+      <div className="w-full max-w-5xl overflow-hidden relative mt-15 flex justify-center">
         <div className="flex justify-center items-center gap-8 transition-all duration-300 relative">
 
           {/* Testimonio izquierdo (mitad visible) */}
