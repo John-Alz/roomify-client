@@ -11,7 +11,7 @@ export const HomePage = () => {
     <div>
       <Navbar />
       <HeroSection />
-      <div className="container mx-auto px-4">
+      <div> {/* Removed className="container mx-auto px-4" */}
         <BookingForm />
         <PopularRooms />
         <CalltoAction />
@@ -21,5 +21,3 @@ export const HomePage = () => {
     </div>
   );
 };
-
-

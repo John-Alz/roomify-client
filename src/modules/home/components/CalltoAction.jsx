@@ -2,25 +2,21 @@ import { Link } from "react-router-dom";
 
 export const CalltoAction = () => {
   return (
-    <section className="relative h-64 flex items-center justify-center text-center bg-white">
-    
+    <section className="relative w-full  mt-8 h-60 flex items-end justify-center text-center bg-white " >
       <img 
         src="public/CTA(2).png" 
-        className=" bg-white absolute inset-0 w-full h-full object-cover"
+        className="absolute w-full h-full  bg-white   "
       />
 
-     
-     
-      <div className="relative z-10 p-6 text-white rounded-lg flex flex-col items-center">
+      <div className=" z-10 mb-10">
+
         <Link 
           to="/reservaciones"
-          className="bg-white text-[#34A0A4] px-6 py-3 rounded-full font-bold shadow-md hover:bg-gray-200 transition mt-20"
+          className="bg-white text-[#34A0A4] px-6 py-2 rounded-full font-bold shadow-md  transition mt- inline-block"
         >
-          Reserva ahora
+          Reservar ahora
         </Link>
       </div>
     </section>
   );
 };
-
-
