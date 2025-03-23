@@ -2,44 +2,77 @@ import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
-    <footer className="bg-white px-10 text-gray-800 pb-6 mt-10 mb-10"> {/* Agregamos mb-10 para espacio debajo */}
-      <div className="container mx-auto flex justify-between items-start px-12">
-        {/* Sección izquierda: Nombre y descripción */}
-        <div className="w-1/3 ml-6"> {/* Movimiento un poco más hacia la derecha */}
-          <h3 className="text-2xl font-semibold">Name Hotel</h3>
-          <p className="text-sm mt-2 text-gray-600">
-            Descripción del hotel. Detalles que los <br /> hagan especial
-          </p>
-        </div>
-
-        {/* Sección central: Enlaces */}
-        <div className="grid grid-cols-3 gap-12 text-sm text-gray-600">
-          {[...Array(3)].map((_, index) => (
-            <div key={index} className="space-y-1">
-              <p>Habitaciones</p>
-              <p>Servicios</p>
-              <p>Eventos</p>
+    <footer className="bg-white px-[216px] text-gray-800 pb-6 mt-10 mb-10">
+      <div className="w-full max-w-screen-xl mx-auto py-20 inline-flex flex-col justify-start items-start gap-16">
+        <div className="self-stretch inline-flex justify-between items-start">
+          <div className="inline-flex flex-col justify-start items-start gap-4">
+            <div className="w-auto h-10 relative">
+              {/* Contenedor del nombre del hotel con estilos aplicados */}
+              <div className="left-0 top-0 absolute justify-start text-black text-5xl font-normal font-['Belleza'] leading-10 whitespace-nowrap">
+                Name Hotel
+              </div>
             </div>
-          ))}
+            <div className="w-80 justify-start text-neutral-600 text-base font-normal font-['DM_Sans'] leading-tight">
+              Descripción del hotel. Detalles que los hagan especial
+            </div>
+          </div>
+          <div className="flex justify-start items-start gap-20">
+            <div className="inline-flex flex-col justify-start items-start gap-2">
+              <div className="text-center justify-start text-neutral-800 text-base font-normal font-['DM_Sans'] leading-tight whitespace-nowrap tracking-wide">
+                Habitaciones
+              </div>
+              <div className="text-center justify-start text-neutral-800 text-base font-normal font-['DM_Sans'] leading-tight whitespace-nowrap tracking-wide">
+                Servicios
+              </div>
+              <div className="text-center justify-start text-neutral-800 text-base font-normal font-['DM_Sans'] leading-tight whitespace-nowrap tracking-wide">
+                Eventos
+              </div>
+            </div>
+            <div className="inline-flex flex-col justify-start items-start gap-2">
+              <div className="text-center justify-start text-neutral-800 text-base font-normal font-['DM_Sans'] leading-tight whitespace-nowrap tracking-wide">
+                Habitaciones
+              </div>
+              <div className="text-center justify-start text-neutral-800 text-base font-normal font-['DM_Sans'] leading-tight whitespace-nowrap tracking-wide">
+                Servicios
+              </div>
+              <div className="text-center justify-start text-neutral-800 text-base font-normal font-['DM_Sans'] leading-tight whitespace-nowrap tracking-wide">
+                Eventos
+              </div>
+            </div>
+            <div className="inline-flex flex-col justify-start items-start gap-2">
+              <div className="text-center justify-start text-neutral-800 text-base font-normal font-['DM_Sans'] leading-tight whitespace-nowrap tracking-wide">
+                Habitaciones
+              </div>
+              <div className="text-center justify-start text-neutral-800 text-base font-normal font-['DM_Sans'] leading-tight whitespace-nowrap tracking-wide">
+                Servicios
+              </div>
+              <div className="text-center justify-start text-neutral-800 text-base font-normal font-['DM_Sans'] leading-tight whitespace-nowrap tracking-wide">
+                Eventos
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-
-      {/* Línea inferior con derechos y redes sociales */}
-      <div className="container mx-auto flex justify-between items-center mt-8 text-sm text-gray-600 px-12">
-        <p className="text-xs ml-6">
-          &copy; Logo Hotel 2025. Derechos reservados
-        </p> {/* Movimiento un poco más hacia la derecha */}
-        <div className="flex space-x-3 items-center mr-6"> {/* Movimiento un poco más hacia la izquierda */}
-          <p>Encuéntranos en:</p>
-          <a href="#" className="text-gray-800 hover:text-gray-900">
-            <i className="fab fa-facebook"></i>
-          </a>
-          <a href="#" className="text-gray-800 hover:text-gray-900">
-            <i className="fab fa-instagram"></i>
-          </a>
-          <a href="#" className="text-gray-800 hover:text-gray-900">
-            <i className="fab fa-twitter"></i>
-          </a>
+        <div className="self-stretch inline-flex justify-between items-center">
+          <div className="justify-start text-neutral-600 text-xs font-normal font-['DM_Sans'] leading-none">
+            © Logo Hotel 2025. Derechos reservados
+          </div>
+          <div className="flex justify-start items-center gap-4">
+            <div className="justify-start text-neutral-600 text-xs font-normal font-['DM_Sans'] leading-none">
+              Encuentranos en:
+            </div>
+            <div className="flex justify-start items-center gap-2">
+              <div className="relative overflow-hidden">
+                {/* Aquí puedes agregar las imágenes que reemplazarán los íconos */}
+                <img src="public/Vector.png" alt="icono1" className="h-5 w-5" />
+              </div>
+              <div className="relative overflow-hidden">
+                <img src="public/Vector2.png" alt="icono2" className="h-5 w-5" />
+              </div>
+              <div className="relative overflow-hidden">
+                <img src="public/Vector3.png" alt="icono3" className="h-5 w-5" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

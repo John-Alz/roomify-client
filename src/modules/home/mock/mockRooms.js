@@ -2,20 +2,26 @@ export const rooms = [
     {
       id: 1,
       img: "public/Frame 45 (2).png", 
-      name: "Wilderness Club at Big Cedar",
-      price: "$2018/Noche"
+      description: "2 Baños",
+      name: "Wilderness Club at Big Ceddar",
+      price: "$2018",
+      horario: "/Noche"
     },
     {
       id: 2,
       img: "public/Frame 45 (1).png", 
-      name: "Wilderness Club at Big Cedar",
-      price: "$2016/Noche"
+      description: "1 Baño con Jacuzzi",
+      name: "Wilderness Club at Big Ceddar",
+      price: "$2016",
+      horario: "/Noche"
     },
     {
       id: 3,
       img: "public/Frame 45.png", 
-      name: "Wilderness Club at Big Cedar",
-      price: "$1024/Noche"
+      description: "Habitacion Matrimonial",
+      name: "Wilderness Club at Big Ceddar",
+      price: "$1024",
+      horario: "/Noche"
     },
     
   ];
