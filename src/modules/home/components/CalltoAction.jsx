@@ -13,7 +13,7 @@ export const CalltoAction = () => {
       <div className="z-10 mb-10">
         <Link 
           to="/reservaciones"
-          className="bg-white text-[#34A0A4] px-8 py-3 flex items-center justify-center rounded-full font-bold shadow-md transition w-auto"
+          className="bg-white text-[#34A0A4] px-8 py-3 flex items-center justify-center rounded-full font-bold transition w-auto"
         >
           <span className="text-[18px] font-bold whitespace-nowrap font-dm-sans tracking-wide text-center">
             Reservar ahora
