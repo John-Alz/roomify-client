@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export const Testimonials = () => {
   return (
-    <div className="w-[73%] flex flex-col justify-center items-center mt-12 gap-10 mx-auto">
+    <div className="w-[74%] flex flex-col justify-center items-center mt-12 gap-10 mx-auto">
       <div className="flex flex-col justify-center items-center gap-4">
         <div className="text-center text-siah text-4xl whitespace-nowrap font-semibold font-dm-sans tracking-wide">
           Lo Que Opinan Nuestros Clientes.
@@ -35,7 +35,7 @@ export const Testimonials = () => {
               src="public/testimonio2.png"
             />
           </div>
-          <div className="px-6 pt-12 pb-6 absolute bg-white rounded-[40px] shadow-[0px_0px_15px_0px_rgba(0,0,0,0.15)] flex flex-col justify-start items-center gap-6 left-[990px] top-[12px]">
+          <div className="px-6 pt-12 pb-6 absolute bg-white rounded-[40px] shadow-[0px_0px_15px_0px_rgba(0,0,0,0.15)] flex flex-col justify-start items-center gap-6 left-[996px] top-[12px]">
             <div className="w-36 text-center text-black text-lg ml-14 font-bold font-['Poppins']">
               Sara Watson
             </div>
