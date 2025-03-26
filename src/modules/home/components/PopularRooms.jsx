@@ -3,7 +3,7 @@ import { rooms } from "../mock/mockRooms";
 
 export const PopularRooms = () => {
   return (
-    <section className="py-[59px] px-6 relative w-[84%] mx-auto">
+    <section className="py-[59px] px-6 relative max-w-[84%] mx-auto">
       
       <h2 className="text-[40px] font-medium text-center section-title mb-[59px] w-full max-w-[410px] mx-auto whitespace-nowrap font-dm-sans tracking-wide">
         Habitaciones Populares
@@ -13,13 +13,13 @@ export const PopularRooms = () => {
       
         <img 
           src="/left.png"  
-          className="absolute left-[-24px] top-33 transform -translate-y-1/2 z-10 w-12 h-12 cursor-pointer hidden md:block"
+          className="absolute left-2 md:left-[-24px] top-1/3 transform -translate-y-1/2 z-10 w-10 h-10 sm:w-12 sm:h-12 cursor-pointer hidden md:block"
         />
 
         {/* Contenedor de habitaciones */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-[2px] px-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[2px] px-8 w-full">
           {rooms.map((room) => (
-            <div key={room.id} className="bg-white flex flex-col items-start p-4 rounded-lg">
+            <div key={room.id} className="flex flex-col items-start p-4">
              
               <img 
                 src={room.img} 
@@ -55,7 +55,7 @@ export const PopularRooms = () => {
        
         <img 
           src="/right.png"  
-          className="absolute right-[-24px] top-33 transform -translate-y-1/2 z-10 w-12 h-12 cursor-pointer hidden md:block"
+          className="absolute right-2 md:right-[-24px] top-1/3 transform -translate-y-1/2 z-10 w-10 h-10 sm:w-12 sm:h-12 cursor-pointer hidden md:block"
         />
       </div>
     </section>
