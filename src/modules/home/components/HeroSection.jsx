@@ -12,7 +12,7 @@ export const HeroSection = () => {
 
       {/* Contenido de la sección */}
       <div className="relative z-10 w-full md:w-[840px] text-white">
-        <h1 className="text-white text-3xl md:text-5xl font-semibold tracking-wide leading-[50px] md:leading-[70px]">
+        <h1 className="text-white text-4xl md:text-5xl font-semibold tracking-wide leading-[70px] md:leading-[70px]">
           "Tu estancia perfecta te espera. <br /> Reserva de forma rápida, segura <br /> y sin complicaciones."
         </h1>
       </div>

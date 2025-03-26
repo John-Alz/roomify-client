@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import { Facebook, Twitter, Instagram} from "lucide-react";
 export const Footer = () => {
   return (
     <footer className="bg-white px-4 sm:px-10 whitespace-nowrap font-16 font-dm-sans tracking-wide lg:px-[115px] text-gray-800 pb-6 mt-10 mb-10">
@@ -47,10 +47,10 @@ export const Footer = () => {
             <p className="text-neutral-600 text-xs font-normal whitespace-nowrap font-dm-sans tracking-wide leading-none">
               Encuéntranos en:
             </p>
-            <div className="flex justify-start  items-center gap-4">
-              <img src="/public/Vector.png" alt="icono1" className="h-5 w-3" />
-              <img src="/public/Vector3.png" alt="icono2" className="h-5 w-6" />
-              <img src="/public/Vector2.png" alt="icono3" className="h-5 w-5" />
+            <div className="flex justify-start items-center gap-4">
+              <Facebook className="h-8 w-5 fill-[#4D4D4D]" />
+              <Instagram className="h-5 w-5 " />
+              <Twitter className="h-5 w-5  fill-[#4D4D4D]" />
             </div>
           </div>
         </div>

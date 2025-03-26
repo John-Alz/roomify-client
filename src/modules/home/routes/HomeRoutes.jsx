@@ -1,6 +1,6 @@
 
 import React from "react";
-import { Navbar, HeroSection, BookingForm, PopularRooms, CalltoAction, Testimonials, Footer } from "../components/home"; 
+import { Navbar, HeroSection, BookingForm, PopularRooms, CalltoAction, Testimonials, Footer } from "../components/index"; 
 
 export const HomeRoutes = () => {
   return (
