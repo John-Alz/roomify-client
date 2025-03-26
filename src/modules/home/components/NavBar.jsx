@@ -7,12 +7,12 @@ export const Navbar = () => {
       {/* Contenedor Principal */}
       <div className="w-full max-w-[1440px] h-[60px] flex justify-between items-center">
         
-        {/* Logo */}
+    
         <div className="pl-[31px] text-white text-2xl sm:text-3xl lg:text-4xl font-normal font-['Belleza'] w-[360px] h-[40px]">
           NameHotel
         </div>
 
-        {/* Menú de navegación */}
+        
         <nav className="hidden  whitespace-nowrap font-dm-sans tracking-wide sm:flex gap-[30px] md:gap-[40px]">
           <NavLink to="/" className={({ isActive }) => `w-auto whitespace-nowrap font-dm-sans tracking-wide h-[36px] flex items-center justify-center text-white text-[14px] sm:text-[16px] font-medium  border-b border-transparent hover:border-white transition duration-300 cursor-pointer ${isActive ? 'border-b border-white' : ''}`}>
             Home
@@ -31,7 +31,7 @@ export const Navbar = () => {
           </NavLink>
         </nav>
 
-        {/* Botón de inicio de sesión */}
+       
         <div className="w-[302px] h-[39px] flex items-center justify-end">
           <div className="w-[130.91px] h-[39px] rounded-full flex items-center justify-center cursor-pointer hover:bg-white/50 transition bg-white/30">
             <span className="text-white text-[14px] sm:text-[16px] whitespace-nowrap font-['DM_Sans'] tracking-wide">

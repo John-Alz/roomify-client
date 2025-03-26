@@ -5,10 +5,9 @@ export const Footer = () => {
     <footer className="bg-white px-4 sm:px-10 whitespace-nowrap font-16 font-dm-sans tracking-wide lg:px-[115px] text-gray-800 pb-6 mt-10 mb-10">
       <div className="w-full max-w-screen-xl mx-auto py-10 flex flex-col justify-start items-start gap-16">
         
-        {/* Sección superior */}
+       
         <div className="w-full flex flex-wrap justify-between items-start gap-20">
-          
-          {/* Nombre del hotel y descripción */}
+   
           <div className="flex flex-col justify-start items-start gap-6 w-full sm:w-auto">
             <div className="text-black text-4xl md:text-5xl font-normal font-['Belleza'] leading-10">
               Name Hotel
@@ -18,7 +17,7 @@ export const Footer = () => {
             </p>
           </div>
 
-          {/* Listado de enlaces */}
+       
           <div className="flex flex-wrap sm:flex-nowrap justify-start items-start gap-12 sm:gap-16 md:gap-24">
             <div className="flex flex-col justify-start items-start gap-3">
               <div className="text-neutral-800 text-base font-normal whitespace-nowrap font-dm-sans tracking-wide leading-tight">Habitaciones</div>
@@ -38,7 +37,7 @@ export const Footer = () => {
           </div>
         </div>
 
-        {/* Sección inferior */}
+     
         <div className="w-full flex flex-col sm:flex-row justify-between items-center gap-6">
           <p className="text-neutral-600 text-xs font-normal whitespace-nowrap font-dm-sans tracking-wide leading-none">
             © Logo Hotel 2025. Derechos reservados

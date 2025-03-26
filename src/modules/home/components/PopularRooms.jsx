@@ -16,7 +16,7 @@ export const PopularRooms = () => {
           className="absolute left-2 md:left-[-24px] top-1/3 transform -translate-y-1/2 z-10 w-10 h-10 sm:w-12 sm:h-12 cursor-pointer hidden md:block"
         />
 
-        {/* Contenedor de habitaciones */}
+       
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[2px] px-8 w-full">
           {rooms.map((room) => (
             <div key={room.id} className="flex flex-col items-start p-4">

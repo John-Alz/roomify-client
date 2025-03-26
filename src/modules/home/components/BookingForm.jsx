@@ -4,7 +4,7 @@ export const BookingForm = () => {
   return (
     <div className="relative z-10 bg-white rounded-xl shadow-lg p-5 md:p-6 flex flex-wrap md:flex-nowrap items-center mx-auto mt-[-47px] space-y-4 md:space-y-0 md:space-x-4" style={{ width: '84%' }}>
       <div className="grid md:flex w-full items-center gap-4">
-        {/* Habitación */}
+        
         <div className="flex items-center gap-2 w-full md:w-1/5 justify-center">
           <i className="fas fa-bed text-teal-500 text-lg"></i>
           <div className="flex flex-col text-center">
@@ -17,7 +17,7 @@ export const BookingForm = () => {
           </div>
         </div>
 
-        {/* Huéspedes */}
+       
         <div className="flex items-center gap-2 w-full md:w-1/4 justify-center">
           <i className="fas fa-user text-teal-500 text-lg"></i>
           <div className="flex flex-col text-center">
@@ -31,7 +31,7 @@ export const BookingForm = () => {
           </div>
         </div>
 
-        {/* Check-in */}
+       
         <div className="flex items-center gap-2 w-full md:w-1/5 justify-center">
           <i className="fas fa-calendar-check text-teal-500 text-lg"></i>
           <div className="flex flex-col text-center">
@@ -43,7 +43,6 @@ export const BookingForm = () => {
           </div>
         </div>
 
-        {/* Check-out */}
         <div className="flex items-center gap-2 w-full md:w-1/5 justify-center">
           <i className="fas fa-calendar-alt text-teal-500 text-lg"></i>
           <div className="flex flex-col text-center">
@@ -55,7 +54,7 @@ export const BookingForm = () => {
           </div>
         </div>
 
-        {/* Botón de Reservar ahora */}
+        
         <Link
           to="/buscar"
           className="bg-[#34A0A4] text-18 text-white px-6 py-3 rounded-2xl w-full md:w-1/5 flex items-center justify-center gap-2 shadow-md mt-2 md:mt-0 whitespace-nowrap font-dm-sans tracking-wide"
