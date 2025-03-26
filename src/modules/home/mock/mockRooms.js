@@ -5,7 +5,7 @@ export const rooms = [
       description: "2 Baños",
       name: "Wilderness Club at Big Ceddar",
       price: "$2018",
-      horario: "/Noche"
+      horario: "/night"
     },
     {
       id: 2,
@@ -13,15 +13,15 @@ export const rooms = [
       description: "1 Baño con Jacuzzi",
       name: "Wilderness Club at Big Ceddar",
       price: "$2016",
-      horario: "/Noche"
+      horario: "/night"
     },
     {
       id: 3,
       img: "public/Frame 45.png", 
-      description: "Habitacion Matrimonial",
+      description: "Habitacion matrimonial",
       name: "Wilderness Club at Big Ceddar",
       price: "$1024",
-      horario: "/Noche"
+      horario: "/night"
     },
     
   ];

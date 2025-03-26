@@ -9,10 +9,10 @@ export const Footer = () => {
         <div className="w-full flex flex-wrap justify-between items-start gap-20">
    
           <div className="flex flex-col justify-start items-start gap-6 w-full sm:w-auto">
-            <div className="text-black text-4xl md:text-5xl font-normal font-['Belleza'] leading-10">
+            <div className="text-black text-4xl font-regular md:text-5xl font-normal font-['Belleza'] leading-10">
               Name Hotel
             </div>
-            <p className="w-full sm:w-80 text-neutral-600 text-base font-normal font-['DM_Sans'] leading-tight">
+            <p className="w-full sm:w-80 text-neutral-600 text-[#555555] font-regular fwhitespace-nowrap font-dm-sans tracking-wide">
               Descripción del hotel. Detalles que los <br /> hagan especial.
             </p>
           </div>
@@ -20,26 +20,26 @@ export const Footer = () => {
        
           <div className="flex flex-wrap sm:flex-nowrap justify-start items-start gap-12 sm:gap-16 md:gap-24">
             <div className="flex flex-col justify-start items-start gap-3">
-              <div className="text-neutral-800 text-base font-normal whitespace-nowrap font-dm-sans tracking-wide leading-tight">Habitaciones</div>
-              <div className="text-neutral-800 text-base font-normal whitespace-nowrap font-dm-sans tracking-wide leading-tight">Servicios</div>
-              <div className="text-neutral-800 text-base font-normal whitespace-nowrap font-dm-sans tracking-wide leading-tight">Eventos</div>
+              <div className="text-neutral-800 text-[#222222] font-regular whitespace-nowrap font-dm-sans tracking-wide leading-tight">Habitaciones</div>
+              <div className="text-neutral-800 text-[#222222] font-regular whitespace-nowrap font-dm-sans tracking-wide leading-tight">Servicios</div>
+              <div className="text-neutral-800 text-[#222222] font-regular whitespace-nowrap font-dm-sans tracking-wide leading-tight">Eventos</div>
             </div>
             <div className="flex flex-col justify-start items-start gap-3">
-              <div className="text-neutral-800 text-base font-normal whitespace-nowrap font-dm-sans tracking-wide leading-tight">Habitaciones</div>
-              <div className="text-neutral-800 text-base font-normal whitespace-nowrap font-dm-sans tracking-wide leading-tight">Servicios</div>
-              <div className="text-neutral-800 text-base font-normal whitespace-nowrap font-dm-sans tracking-wide leading-tight">Eventos</div>
+              <div className="text-neutral-800 text-[#222222] font-regular whitespace-nowrap font-dm-sans tracking-wide leading-tight">Habitaciones</div>
+              <div className="text-neutral-800 text-[#222222] font-regular whitespace-nowrap font-dm-sans tracking-wide leading-tight">Servicios</div>
+              <div className="text-neutral-800 text-[#222222] font-regular whitespace-nowrap font-dm-sans tracking-wide leading-tight">Eventos</div>
             </div>
             <div className="flex flex-col justify-start items-start gap-3">
-              <div className="text-neutral-800 text-base font-normal whitespace-nowrap font-dm-sans tracking-wide leading-tight">Habitaciones</div>
-              <div className="text-neutral-800 text-base font-normal whitespace-nowrap font-dm-sans tracking-wide leading-tight">Servicios</div>
-              <div className="text-neutral-800 text-base font-normal whitespace-nowrap font-dm-sans tracking-wide leading-tight">Eventos</div>
+              <div className="text-neutral-800 text-[#222222] font-regular whitespace-nowrap font-dm-sans tracking-wide leading-tight">Habitaciones</div>
+              <div className="text-neutral-800 ttext-[#222222] font-regular whitespace-nowrap font-dm-sans tracking-wide leading-tight">Servicios</div>
+              <div className="text-neutral-800 text-[#222222] font-regular whitespace-nowrap font-dm-sans tracking-wide leading-tight">Eventos</div>
             </div>
           </div>
         </div>
 
      
         <div className="w-full flex flex-col sm:flex-row justify-between items-center gap-6">
-          <p className="text-neutral-600 text-xs font-normal whitespace-nowrap font-dm-sans tracking-wide leading-none">
+          <p className="text-neutral-600 text-xs text-[#4D4D4D] font-regular whitespace-nowrap font-dm-sans tracking-wide leading-none">
             © Logo Hotel 2025. Derechos reservados
           </p>
 

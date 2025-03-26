@@ -5,7 +5,7 @@ export const PopularRooms = () => {
   return (
     <section className="py-[59px] px-6 relative max-w-[84%] mx-auto">
       
-      <h2 className="text-[40px] font-medium text-center section-title mb-[59px] w-full max-w-[410px] mx-auto whitespace-nowrap font-dm-sans tracking-wide">
+      <h2 className="text-[35px] font-semibold text-center section-title mb-[30px] w-full max-w-[410px] mx-auto whitespace-nowrap font-dm-sans tracking-wide">
         Habitaciones Populares
       </h2>
 
@@ -38,16 +38,15 @@ export const PopularRooms = () => {
               </p>
 
               
-              <div className="flex items-center">
-           
-                <p className="text-[27px] font-normal text-[#34A0A4] font-dm-sans tracking-wide">
-                  {room.price}
-                </p>
+              <div className="flex items-baseline space-x">
+  <p className="text-[27px] font-regular  text-[#1A759F] font-dm-sans tracking-tight">
+    {room.price}
+  </p>
+  <p className="text-[15px] relative top-[2px] font-normal text-[#1A759F] font-regular font-dm-sans tracking-wide">
+    {room.horario}
+  </p>
+</div>
 
-                <p className="text-[15px] font-normal text-[#1A759F] font-dm-sans tracking-wide ml-2">
-                  {room.horario}
-                </p>
-              </div>
             </div>
           ))}
         </div>

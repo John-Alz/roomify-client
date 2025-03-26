@@ -5,17 +5,17 @@ export const Testimonials = () => {
   return (
     <div className="w-[74%] flex flex-col justify-center items-center mt-12 gap-10 mx-auto">
       <div className="flex flex-col justify-center items-center gap-4">
-        <div className="text-center text-siah text-4xl whitespace-nowrap font-semibold font-dm-sans tracking-wide">
+        <div className="text-center text-[#292D32] ml-6  text-4xl whitespace-nowrap font-bold font-dm-sans tracking-wide">
           Lo Que Opinan Nuestros Clientes.
         </div>
       </div>
-      <div className="self-stretch pt-10 pb-2 flex flex-col justify-center mt-12 items-center gap-6 overflow-hidden">
+      <div className="self-stretch pt-10 pb-2 flex flex-col justify-center mt-8 items-center gap-6 overflow-hidden">
         <div className="w-[1400px] h-44 relative flex justify-center items-center">
           <div className="w-[400px] h-44 px-6 pt-8 pb-6 mr-28 absolute bg-white rounded-[40px] shadow-[0px_0px_15px_0px_rgba(0,0,0,0.15)] flex flex-col justify-start items-center gap-4 left-[40px] top-[10px]">
             <div className="w-36 text-center text-black mr-30 text-lg font-bold font-['Poppins']">
               Cameron Williamson
             </div>
-            <div className="w-[380px] text-center text-black text-lg font-light font-['Poppins']">
+            <div className="w-[380px] text-center text-black text-lg font-regular font-['Poppins']">
               Servicio excepcional, superó mis expectativas en todos los sentidos. ¡Muy recomendado!
             </div>
             <img
@@ -27,7 +27,7 @@ export const Testimonials = () => {
             <div className="w-36 text-center text-black text-lg font-semibold font-['Poppins']">
               Fatima Taylor
             </div>
-            <div className="w-[380px] text-center text-black text-xl font-normal font-['Poppins']">
+            <div className="w-[380px] text-center text-black text-xl font-regular font-['Poppins']">
               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
             </div>
             <img
@@ -39,7 +39,7 @@ export const Testimonials = () => {
             <div className="w-36 text-center text-black text-lg ml-14 font-bold font-['Poppins']">
               Sara Watson
             </div>
-            <div className="w-[380px] text-center text-black text-lg font-light font-['Poppins']">
+            <div className="w-[380px] text-center text-black text-lg font-regular font-['Poppins']">
               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id es
             </div>
             <img
