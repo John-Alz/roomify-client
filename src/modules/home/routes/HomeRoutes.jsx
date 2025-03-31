@@ -1,17 +1,12 @@
 
-import React from "react";
-import { Navbar, HeroSection, BookingForm, PopularRooms, CalltoAction, Testimonials, Footer } from "../components/index"; 
+import React from 'react'
+import { Route, Routes } from 'react-router-dom'
+import { Home } from '../Home'
 
 export const HomeRoutes = () => {
   return (
-    <div>
-      <Navbar />
-      <HeroSection />
-      <BookingForm />
-      <PopularRooms />
-      <CalltoAction />
-      <Testimonials />
-      <Footer />
-    </div>
-  );
-};
+    <Routes>
+      <Route path='/' element={<Home />} />
+    </Routes>
+  )
+}
