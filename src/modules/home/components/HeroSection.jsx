@@ -17,17 +17,14 @@ export const HeroSection = () => {
         </h1>
       </div>
 
-
-      <a className="absolute left-1/8 transform -translate-x-1/2 bottom-24 sm:bottom-16 md:bottom-24 flex items-center gap-4 sm:gap-6 ">
+      {/* Botón Ver Video */}
+      <a className="absolute bottom-24 sm:bottom-16 md:bottom-24 left-42 transform -translate-x-1/2 flex items-center gap-4 sm:gap-6 justify-center">
         <span className="text-white text-lg sm:text-xl md:text-2xl font-dm-sans tracking-wide">
           Ver video
         </span>
         <div className="relative flex items-center justify-center">
-         
           <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 absolute rounded-full border border-white/20 animate-ping cursor-pointer "></div>
           <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 absolute rounded-full border border-white/30 animate-pulse cursor-pointer"></div>
-          
-          
           <div className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 p-2 bg-white/10 rounded-full outline outline-1 outline-offset-[-1px] cursor-pointer outline-white/60 flex items-center justify-center">
             <img src="public/play_arrow.png" alt="Play Icon" className="w-6 h-6" />
           </div>

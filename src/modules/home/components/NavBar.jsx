@@ -7,7 +7,7 @@ export const Navbar = () => {
 
   return (
     <header className="absolute top-0 left-0 w-full bg-transparent font-dm-sans tracking-wide z-50 px-4 sm:px-6 md:px-10 lg:px-20">
-      <div className="max-w-[1440px] mx-auto flex items-center justify-between h-[80px] py-2">
+      <div className="w-full flex items-center justify-between h-[80px] py-2">
         {/* Logo */}
         <h1 className="text-white text-2xl sm:text-3xl lg:text-4xl ml-6 font-regular font-['Belleza']">
           NameHotel

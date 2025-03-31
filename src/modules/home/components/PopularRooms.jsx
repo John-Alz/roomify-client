@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { rooms } from "../mock/mockRooms";  
+import { Star } from "lucide-react";  // Importa el ícono de la estrella
 
 export const PopularRooms = () => {
   return (
@@ -16,42 +17,47 @@ export const PopularRooms = () => {
           className="absolute left-2 md:left-[-24px] top-1/3 transform -translate-y-1/2 z-10 w-10 h-10 sm:w-12 sm:h-12 cursor-pointer hidden md:block"
         />
 
-       
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[2px] px-8 w-full">
           {rooms.map((room) => (
-            <div key={room.id} className="flex flex-col items-start p-4">
+            <div key={room.id} className="flex flex-col items-start p-4 relative">
              
+              {/* Contenedor con estrella y puntaje */}
+              <div className="absolute top-6 right-7 flex items-center justify-center p-2 bg-white/40 rounded-2xl backdrop-blur-[2px] w-[66px] h-[30px] z-10">
+                <Star 
+                  size={16} 
+                  fill="#34A0A4"  // Color de relleno de la estrella
+                  stroke="none"   // Sin borde
+                />
+                <div className="ml-1 text-[14px] text-black font-dm-sans">{room.rating}</div> {/* Puntaje en negro */}
+              </div>
+
               <img 
                 src={room.img} 
                 className="rounded-xl w-full h-auto object-cover mb-4" 
                 alt={room.name} 
               />
-
-             
+              
               <h3 className="text-[17px] font-medium font-dm-sans tracking-wide w-full mb-1">
                 {room.name}
               </h3>
 
-    
               <p className="text-[15px] text-[#858585] font-dm-sans leading-snug w-full mb-4">
                 {room.description}
               </p>
 
-              
               <div className="flex items-baseline space-x">
-  <p className="text-[27px] font-regular  text-[#1A759F] font-dm-sans tracking-tight">
-    {room.price}
-  </p>
-  <p className="text-[15px] relative top-[2px] font-normal text-[#1A759F] font-regular font-dm-sans tracking-wide">
-    {room.horario}
-  </p>
-</div>
+                <p className="text-[27px] font-regular text-[#1A759F] font-dm-sans tracking-tight">
+                  {room.price}
+                </p>
+                <p className="text-[15px] relative top-[2px] font-normal text-[#1A759F] font-regular font-dm-sans tracking-wide">
+                  {room.horario}
+                </p>
+              </div>
 
             </div>
           ))}
         </div>
 
-       
         <img 
           src="/right.png"  
           className="absolute right-2 md:right-[-24px] top-1/3 transform -translate-y-1/2 z-10 w-10 h-10 sm:w-12 sm:h-12 cursor-pointer hidden md:block"
