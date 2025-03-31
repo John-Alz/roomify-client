@@ -5,7 +5,7 @@ export const Testimonials = () => {
   return (
     <section className="w-[74%] flex flex-col justify-center items-center mt-12 gap-10 mx-auto">
       <header className="flex flex-col justify-center items-center gap-4">
-        <h2 className="text-center text-[#292D32] ml-6 text-4xl whitespace-nowrap font-bold font-dm-sans tracking-wide">
+      <h2 className="text-center text-[#292D32] ml-6 text-xl sm:text-3xl md:text-4xl lg:text-5xl whitespace-nowrap font-bold font-dm-sans tracking-wide">
           Lo Que Opinan Nuestros Clientes.
         </h2>
       </header>
