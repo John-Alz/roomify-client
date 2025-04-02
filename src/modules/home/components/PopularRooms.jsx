@@ -26,6 +26,7 @@ export const PopularRooms = () => {
                 <Star 
                   size={16} 
                   fill="#34A0A4"  
+                  stroke="none"
                 />
                 <div className="ml-1 text-[14px] text-black font-dm-sans">{room.rating}</div> {/* Puntaje en negro */}
               </div>
