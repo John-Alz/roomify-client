@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import { NavLink } from 'react-router-dom';
 import { Menu, X } from "lucide-react";
+import { useFlag } from "../hooks/UseFlag";
 
 export const Navbar = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+  // const [menuOpen, setMenuOpen] = useState(false);
+
+  const { handleFlag, flag } = useFlag()
 
   return (
     <header className="absolute top-0 left-0 w-full bg-transparent font-dm-sans tracking-wide z-50 px-4 sm:px-6 md:px-10 lg:px-20">
@@ -30,25 +33,25 @@ export const Navbar = () => {
         </aside>
 
         {/* Menú hamburguesa (móvil y tablet) */}
-        <button className="lg:hidden text-white" onClick={() => setMenuOpen(!menuOpen)}>
-          {menuOpen ? <X size={28} /> : <Menu size={28} />}
+        <button className="lg:hidden text-white" onClick={handleFlag}>
+          {flag ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>
 
       {/* Menú desplegable para móvil y tablet */}
-      <section className={`lg:hidden fixed top-0 left-0 w-full h-full bg-black/90 flex flex-col items-center justify-center transition-transform ${menuOpen ? 'translate-x-0' : '-translate-x-full'}`}>
-        <button className="absolute top-6 right-6 text-white" onClick={() => setMenuOpen(false)}>
+      <section className={`lg:hidden fixed top-0 left-0 w-full h-full bg-black/90 flex flex-col items-center justify-center transition-transform ${flag ? 'translate-x-0' : '-translate-x-full'}`}>
+        <button className="absolute top-6 right-6 text-white" onClick={handleFlag}>
           <X size={28} />
         </button>
-        <NavLink to="/" className="py-3 text-white text-xl" onClick={() => setMenuOpen(false)}>Inicio</NavLink>
-        <NavLink to="/Rooms" className="py-3 text-white text-xl" onClick={() => setMenuOpen(false)}>Habitaciones</NavLink>
-        <NavLink to="/services" className="py-3 text-white text-xl" onClick={() => setMenuOpen(false)}>Servicios</NavLink>
-        <NavLink to="About Us" className="py-3 text-white text-xl" onClick={() => setMenuOpen(false)}>Nosotros</NavLink>
-        <NavLink to="/Contact" className="py-3 text-white text-xl" onClick={() => setMenuOpen(false)}>Contacto</NavLink>
+        <NavLink to="/" className="py-3 text-white text-xl" onClick={handleFlag}>Inicio</NavLink>
+        <NavLink to="/Rooms" className="py-3 text-white text-xl" onClick={handleFlag}>Habitaciones</NavLink>
+        <NavLink to="/services" className="py-3 text-white text-xl" onClick={handleFlag}>Servicios</NavLink>
+        <NavLink to="About Us" className="py-3 text-white text-xl" onClick={handleFlag}>Nosotros</NavLink>
+        <NavLink to="/Contact" className="py-3 text-white text-xl" onClick={handleFlag}>Contacto</NavLink>
         <NavLink
           to="/auth/login"
           className="mt-6 bg-white/40 hover:bg-white/60 transition text-white text-[16px] px-5 py-2 rounded-full text-center"
-          onClick={() => setMenuOpen(false)}
+          onClick={handleFlag}
         >
           Iniciar sesión
         </NavLink>
