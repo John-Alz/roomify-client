@@ -1,6 +1,7 @@
 
 import React from "react";
-import { Navbar, HeroSection, BookingForm, PopularRooms, CalltoAction, Testimonials, Footer } from "./components/index";
+import { HeroSection, BookingForm, PopularRooms, CalltoAction, Testimonials } from "./components/index";
+import { Footer, Navbar } from "../core/components";
 
 export const Home = () => {
     return (
