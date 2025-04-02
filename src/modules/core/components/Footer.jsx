@@ -36,10 +36,10 @@ export const Footer = () => {
           
           <div className="flex flex-col sm:flex-row items-center gap-6">
             <p className="text-[#4D4D4D] text-xs">Encuéntranos en:</p>
-            <div className="flex justify-start items-center gap-4">
-              <Facebook className="h-8 w-5 fill-[#4D4D4D]" />
-              <Instagram className="h-5 w-5 " />
-              <Twitter className="h-5 w-5  fill-[#4D4D4D]" />
+            <div className="flex items-center gap-4">
+              <Facebook className="h-6 w-6" stroke="none" fill="#4D4D4D" />
+              <Instagram className="h-6 w-6" stroke="#4D4D4D" />
+              <Twitter className="h-6 w-6" stroke="none" fill="#4D4D4D" />
             </div>
           </div>
         </div>
