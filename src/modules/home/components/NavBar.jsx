@@ -16,10 +16,10 @@ export const Navbar = () => {
         {/* Menú de navegación (escritorio) */}
         <nav className="hidden lg:flex flex-wrap gap-6 md:gap-8">
           <NavLink to="/" className={({ isActive }) => `text-white text-[14px] sm:text-[16px] border-b border-transparent hover:border-white transition duration-300 ${isActive ? 'border-b border-white' : ''}`}>Inicio</NavLink>
-          <NavLink to="/habitaciones" className={({ isActive }) => `text-white text-[14px] sm:text-[16px] border-b border-transparent hover:border-white transition duration-300 ${isActive ? 'border-b border-white' : ''}`}>Habitaciones</NavLink>
-          <NavLink to="/servicios" className={({ isActive }) => `text-white text-[14px] sm:text-[16px] border-b border-transparent hover:border-white transition duration-300 ${isActive ? 'border-b border-white' : ''}`}>Servicios</NavLink>
-          <NavLink to="/sobre-nosotros" className={({ isActive }) => `text-white text-[14px] sm:text-[16px] border-b border-transparent hover:border-white transition duration-300 ${isActive ? 'border-b border-white' : ''}`}>Nosotros</NavLink>
-          <NavLink to="/contacto" className={({ isActive }) => `text-white text-[14px] sm:text-[16px] border-b border-transparent hover:border-white transition duration-300 ${isActive ? 'border-b border-white' : ''}`}>Contacto</NavLink>
+          <NavLink to="/Rooms" className={({ isActive }) => `text-white text-[14px] sm:text-[16px] border-b border-transparent hover:border-white transition duration-300 ${isActive ? 'border-b border-white' : ''}`}>Habitaciones</NavLink>
+          <NavLink to="/Services" className={({ isActive }) => `text-white text-[14px] sm:text-[16px] border-b border-transparent hover:border-white transition duration-300 ${isActive ? 'border-b border-white' : ''}`}>Servicios</NavLink>
+          <NavLink to="/About-Us" className={({ isActive }) => `text-white text-[14px] sm:text-[16px] border-b border-transparent hover:border-white transition duration-300 ${isActive ? 'border-b border-white' : ''}`}>Nosotros</NavLink>
+          <NavLink to="/Contact" className={({ isActive }) => `text-white text-[14px] sm:text-[16px] border-b border-transparent hover:border-white transition duration-300 ${isActive ? 'border-b border-white' : ''}`}>Contacto</NavLink>
         </nav>
 
         {/* Botón de inicio de sesión (escritorio) */}
@@ -41,10 +41,10 @@ export const Navbar = () => {
           <X size={28} />
         </button>
         <NavLink to="/" className="py-3 text-white text-xl" onClick={() => setMenuOpen(false)}>Inicio</NavLink>
-        <NavLink to="/habitaciones" className="py-3 text-white text-xl" onClick={() => setMenuOpen(false)}>Habitaciones</NavLink>
-        <NavLink to="/servicios" className="py-3 text-white text-xl" onClick={() => setMenuOpen(false)}>Servicios</NavLink>
-        <NavLink to="/sobre-nosotros" className="py-3 text-white text-xl" onClick={() => setMenuOpen(false)}>Nosotros</NavLink>
-        <NavLink to="/contacto" className="py-3 text-white text-xl" onClick={() => setMenuOpen(false)}>Contacto</NavLink>
+        <NavLink to="/Rooms" className="py-3 text-white text-xl" onClick={() => setMenuOpen(false)}>Habitaciones</NavLink>
+        <NavLink to="/services" className="py-3 text-white text-xl" onClick={() => setMenuOpen(false)}>Servicios</NavLink>
+        <NavLink to="About Us" className="py-3 text-white text-xl" onClick={() => setMenuOpen(false)}>Nosotros</NavLink>
+        <NavLink to="/Contact" className="py-3 text-white text-xl" onClick={() => setMenuOpen(false)}>Contacto</NavLink>
         <NavLink 
           to="/auth/login" 
           className="mt-6 bg-white/40 hover:bg-white/60 transition text-white text-[16px] px-5 py-2 rounded-full text-center"

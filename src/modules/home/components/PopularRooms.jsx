@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { rooms } from "../mock/mockRooms";  
-import { Star } from "lucide-react";  // Importa el ícono de la estrella
+import { Star } from "lucide-react";  // 
 
 export const PopularRooms = () => {
   return (
@@ -25,8 +25,7 @@ export const PopularRooms = () => {
               <div className="absolute top-6 right-7 flex items-center justify-center p-2 bg-white/40 rounded-2xl backdrop-blur-[2px] w-[66px] h-[30px] z-10">
                 <Star 
                   size={16} 
-                  fill="#34A0A4"  // Color de relleno de la estrella
-                  stroke="none"   // Sin borde
+                  fill="#34A0A4"  
                 />
                 <div className="ml-1 text-[14px] text-black font-dm-sans">{room.rating}</div> {/* Puntaje en negro */}
               </div>
