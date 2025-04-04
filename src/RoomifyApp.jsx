@@ -1,10 +1,10 @@
 import React from 'react'
-import { LoginForm } from './modules/auth/components/LoginForm'
+import { AppRouter } from './routes/AppRouter'
 
 export const RoomifyApp = () => {
     return (
-        <div>
-            <LoginForm />
-        </div>
+        <>
+            <AppRouter />
+        </>
     )
 }
