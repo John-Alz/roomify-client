@@ -1,10 +1,8 @@
-import React, { useState } from "react";
 import { NavLink } from 'react-router-dom';
 import { Menu, X } from "lucide-react";
 import { useFlag } from "../hooks/UseFlag";
 
 export const Navbar = () => {
-  // const [menuOpen, setMenuOpen] = useState(false);
 
   const { handleFlag, flag } = useFlag()
 
