@@ -13,11 +13,16 @@ import 'swiper/css/navigation';
 
 import { Navigation } from 'swiper/modules';
 import { useRef } from "react";
+import { useFetch } from "../../core/hooks/useFetch";
 
 
 export const PopularRooms = () => {
 
   const swiperRef = useRef(null);
+
+  const { data } = useFetch("http://localhost:8080/api/v1/rooms?page=0&size=20")
+  console.log(data);
+
 
 
   return (
@@ -35,7 +40,7 @@ export const PopularRooms = () => {
           modules={[Navigation]}
           onSwiper={(swiper) => (swiperRef.current = swiper)}
         >
-          {rooms.map((room) => (
+          {data?.content?.map((room) => (
             <SwiperSlide >
               <div key={room.id} className="flex flex-col items-start p-4 relative">
                 {/* Contenedor con estrella y puntaje */}
@@ -45,30 +50,35 @@ export const PopularRooms = () => {
                     fill="#34A0A4"
                     stroke="none"
                   />
-                  <div className="ml-1 text-[14px] text-black font-dm-sans">{room.rating}</div> {/* Puntaje en negro */}
+                  <div className="ml-1 text-[14px] text-black font-dm-sans">4.5</div> {/* Puntaje en negro */}
                 </div>
 
                 <img
-                  src={room.img}
+                  src={room.room_images[0]}
                   className="rounded-xl w-full h-auto object-cover mb-4"
-                  alt={room.name}
+                  alt={room.room_rumber}
                 />
 
-                <h3 className="text-[17px] font-medium font-dm-sans tracking-wide w-full mb-1">
-                  {room.name}
+                <h3 className="text-2xl font-medium tracking-wide w-full mb-1">
+                  {room.room_type_name}
                 </h3>
 
-                <p className="text-[15px] text-[#858585] font-dm-sans leading-snug w-full mb-4">
-                  {room.description}
-                </p>
+                <div className="w-full flex gap-3">
+                  <p className="text-[15px] text-[#858585] font-dm-sans leading-snug mb-4">
+                    {room.rooms} camas
+                  </p>
+                  <p className="text-[15px] text-[#858585] font-dm-sans leading-snug mb-4">
+                    {room.bathRooms} banios
+                  </p>
+                </div>
 
                 <div className="flex items-baseline space-x">
                   <p className="text-[27px] font-regular text-[#1A759F] font-dm-sans tracking-tight">
-                    {room.price}
+                    ${room.room_price} <small>/noche</small>
                   </p>
-                  <p className="text-[15px] relative top-[2px] font-normal text-[#1A759F] font-regular font-dm-sans tracking-wide">
+                  {/* <p className="text-[15px] relative top-[2px] font-normal text-[#1A759F] font-regular font-dm-sans tracking-wide">
                     {room.horario}
-                  </p>
+                  </p> */}
                 </div>
 
               </div>

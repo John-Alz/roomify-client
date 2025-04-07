@@ -13,7 +13,7 @@ export const api = {
     get: async (endpoint) => {
         try {
             let response = await apiClient.get(endpoint);
-            return response;
+            return response.data;
         } catch (error) {
             console.log(`Error en el get de las app: ${error}`);
             throw new Error;
