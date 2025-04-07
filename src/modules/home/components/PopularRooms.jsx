@@ -20,8 +20,6 @@ export const PopularRooms = () => {
   const swiperRef = useRef(null);
 
 
-
-
   return (
     <section className="py-[59px] relative max-w-[84%] mx-auto">
       <h2 className="text-[35px] font-semibold text-center section-title mb-[30px] w-full max-w-[410px] mx-auto whitespace-nowrap font-dm-sans tracking-wide">
