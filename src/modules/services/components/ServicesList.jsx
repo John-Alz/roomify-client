@@ -24,7 +24,7 @@ export const ServicesList = () => {
           <div
             key={service.id}
             className="bg-gray-100 p-6 rounded-xl flex flex-col items-center justify-center w-full max-w-xs mx-auto h-[250px] 
-              transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg active:scale-95 "
+              transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg  "
           >
             <div className="mb-4">{service.icon}</div>
             <p className="text-lg font-medium text-center text-[#34A0A4]">{service.name}</p>
