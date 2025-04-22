@@ -10,6 +10,15 @@ const apiClient = axios.create({
 });
 
 export const api = {
+    get: async (endpoint) => {
+        try {
+            let response = await apiClient.get(endpoint);
+            return response.data;
+        } catch (error) {
+            console.log(`Error en el get de las app: ${error}`);
+            throw new Error;
+        }
+    },
     post: async (endpoint, data, credentials) => {
         try {
             let response = await apiClient.post(endpoint, data, credentials);
@@ -18,5 +27,6 @@ export const api = {
             console.log(`Error en el post de las app: ${error}`);
             throw new Error;
         }
-    }
+    },
+
 }
