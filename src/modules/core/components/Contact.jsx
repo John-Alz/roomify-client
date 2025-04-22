@@ -24,7 +24,7 @@ export const Contact = ({ flag, handleFlag }) => {
           ${flag ? "translate-x-0" : "translate-x-full"}
         `}
       >
-        {/* Botón de cerrar */}
+        
         <button
           className="absolute top-4 left-4 p-2 text-black hover:bg-gray-200 rounded"
           onClick={handleFlag}
@@ -33,7 +33,7 @@ export const Contact = ({ flag, handleFlag }) => {
           <X size={24} />
         </button>
 
-        {/* Título alineado a la izquierda */}
+       
         <h2 className="text-2xl font-semibold text-left mt-15">
           Te ayudamos a gestionar tu reserva
         </h2>
