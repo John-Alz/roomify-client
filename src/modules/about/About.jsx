@@ -9,7 +9,8 @@ export const About = () => {
       {/* Usamos solo una instancia de Hero con el título y la imagen */}
       <Hero 
         title="About Us" 
-        image="public/consejos-para-una-habitacion-de-invitados_900.jpg" // Imagen específica para la página "About"
+       
+        image="consejos-para-una-habitacion-de-invitados_900.jpg" // Imagen específica para la página "About"
       />
 
       <AboutPage />
