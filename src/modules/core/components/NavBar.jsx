@@ -20,9 +20,9 @@ export const Navbar = () => {
         {/* Navegación escritorio */}
         <nav className="hidden lg:flex flex-wrap gap-6 md:gap-8">
           <NavLink to="/" className={({ isActive }) => `text-white text-[14px] sm:text-[16px] border-b border-transparent hover:border-white transition duration-300 ${isActive ? 'border-b border-white' : ''}`}>Inicio</NavLink>
-          <NavLink to="/Rooms" className={({ isActive }) => `text-white text-[14px] sm:text-[16px] border-b border-transparent hover:border-white transition duration-300 ${isActive ? 'border-b border-white' : ''}`}>Habitaciones</NavLink>
+          <NavLink to="/rooms" className={({ isActive }) => `text-white text-[14px] sm:text-[16px] border-b border-transparent hover:border-white transition duration-300 ${isActive ? 'border-b border-white' : ''}`}>Habitaciones</NavLink>
           <NavLink to="/services" className={({ isActive }) => `text-white text-[14px] sm:text-[16px] border-b border-transparent hover:border-white transition duration-300 ${isActive ? 'border-b border-white' : ''}`}>Servicios</NavLink>
-          <NavLink to="/About-Us" className={({ isActive }) => `text-white text-[14px] sm:text-[16px] border-b border-transparent hover:border-white transition duration-300 ${isActive ? 'border-b border-white' : ''}`}>Nosotros</NavLink>
+          <NavLink to="/about-us" className={({ isActive }) => `text-white text-[14px] sm:text-[16px] border-b border-transparent hover:border-white transition duration-300 ${isActive ? 'border-b border-white' : ''}`}>Nosotros</NavLink>
           
           {/* Botón de Contacto que abre el Panel */}
           <button
@@ -54,10 +54,10 @@ export const Navbar = () => {
           <X size={28} />
         </button>
         <NavLink to="/" className="py-3 text-white text-xl" onClick={handleFlag}>Inicio</NavLink>
-        <NavLink to="/Rooms" className="py-3 text-white text-xl" onClick={handleFlag}>Habitaciones</NavLink>
+        <NavLink to="/rooms" className="py-3 text-white text-xl" onClick={handleFlag}>Habitaciones</NavLink>
         <NavLink to="/services" className="py-3 text-white text-xl" onClick={handleFlag}>Servicios</NavLink>
-        <NavLink to="About Us" className="py-3 text-white text-xl" onClick={handleFlag}>Nosotros</NavLink>
-        <NavLink to="/Contact" className="py-3 text-white text-xl" onClick={handleFlag}>Contacto</NavLink>
+        <NavLink to="about us" className="py-3 text-white text-xl" onClick={handleFlag}>Nosotros</NavLink>
+        <NavLink to="/contact" className="py-3 text-white text-xl" onClick={handleFlag}>Contacto</NavLink>
         <NavLink
           to="/auth/login"
           className="mt-6 bg-white/40 hover:bg-white/60 transition text-white text-[16px] px-5 py-2 rounded-full text-center"
