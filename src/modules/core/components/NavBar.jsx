@@ -1,12 +1,14 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { Menu, X } from "lucide-react";
+import { PanelContacto } from '../../Contact/components/PanelContacto';
 import { useFlag } from "../hooks/UseFlag";
 import { Contact } from "./Contact";
 
 export const Navbar = () => {
-  // Estado para controlar si el menú hamburguesa está abierto
-  const { flag: menuAbierto, handleFlag: alternarMenu } = useFlag();
+  
+
+  const { handleFlag, flag } = useFlag()
 
   // Estado para controlar si el panel de contacto está abierto
   const { flag: contactoAbierto, handleFlag: alternarContacto } = useFlag();
@@ -19,20 +21,23 @@ export const Navbar = () => {
           NameHotel
         </h1>
 
-        {/* Menú de navegación (escritorio) */}
+        {/* Navegación escritorio */}
         <nav className="hidden lg:flex flex-wrap gap-6 md:gap-8">
           <NavLink to="/" className={({ isActive }) => `text-white text-[14px] sm:text-[16px] border-b border-transparent hover:border-white transition duration-300 ${isActive ? 'border-b border-white' : ''}`}>Inicio</NavLink>
-          <NavLink to="/Rooms" className={({ isActive }) => `text-white text-[14px] sm:text-[16px] border-b border-transparent hover:border-white transition duration-300 ${isActive ? 'border-b border-white' : ''}`}>Habitaciones</NavLink>
+          <NavLink to="/rooms" className={({ isActive }) => `text-white text-[14px] sm:text-[16px] border-b border-transparent hover:border-white transition duration-300 ${isActive ? 'border-b border-white' : ''}`}>Habitaciones</NavLink>
           <NavLink to="/services" className={({ isActive }) => `text-white text-[14px] sm:text-[16px] border-b border-transparent hover:border-white transition duration-300 ${isActive ? 'border-b border-white' : ''}`}>Servicios</NavLink>
-          <NavLink to="/About-Us" className={({ isActive }) => `text-white text-[14px] sm:text-[16px] border-b border-transparent hover:border-white transition duration-300 ${isActive ? 'border-b border-white' : ''}`}>Nosotros</NavLink>
+          <NavLink to="/about-us" className={({ isActive }) => `text-white text-[14px] sm:text-[16px] border-b border-transparent hover:border-white transition duration-300 ${isActive ? 'border-b border-white' : ''}`}>Nosotros</NavLink>
+          
+          {/* Botón de Contacto que abre el Panel */}
           <button
-  onClick={alternarContacto}
-  className="text-white text-[14px] sm:text-[16px] border-b border-transparent hover:border-white transition duration-300 cursor-pointer"
->
-  Contacto
-</button>
-
+            onClick={handleFlag}
+            className="text-white text-[14px] sm:text-[16px] border-b border-transparent hover:border-white transition duration-300"
+          >
+            Contacto
+          </button>
         </nav>
+
+        
 
         {/* Botón de inicio de sesión (escritorio) */}
         <aside className="hidden lg:flex">
@@ -47,63 +52,30 @@ export const Navbar = () => {
 </button>
 </div>
 
-{/* Menú desplegable para móvil y tablet */}
-<section className={`lg:hidden fixed top-0 left-0 w-full h-full bg-white flex flex-col items-center justify-center transition-transform ${menuAbierto ? 'translate-x-0' : '-translate-x-full'}`}>
-  <button className="absolute top-6 right-6 text-gray-900" onClick={alternarMenu}>
-    <X size={28} />
-  </button>
-  <NavLink 
-    to="/" 
-    className="py-3 text-black text-xl border-b border-transparent hover:border-[#34A0A4] transition duration-300" 
-    onClick={alternarMenu}
-  >
-    Inicio
-  </NavLink>
-  <NavLink 
-    to="/Rooms" 
-    className="py-3 text-black text-xl border-b border-transparent hover:border-[#34A0A4] transition duration-300" 
-    onClick={alternarMenu}
-  >
-    Habitaciones
-  </NavLink>
-  <NavLink 
-    to="/services" 
-    className="py-3 text-black text-xl border-b border-transparent hover:border-[#34A0A4] transition duration-300" 
-    onClick={alternarMenu}
-  >
-    Servicios
-  </NavLink>
-  <NavLink 
-    to="/About-Us" 
-    className="py-3 text-black text-xl border-b border-transparent hover:border-[#34A0A4] transition duration-300" 
-    onClick={alternarMenu}
-  >
-    Nosotros
-  </NavLink>
-
-  {/* Contacto: cerrar menú y abrir panel */}
-  <button
-    className="py-3 text-black text-xl border-b border-transparent hover:border-[#34A0A4] transition duration-300"
-    onClick={() => {
-      alternarMenu();
-      alternarContacto();
-    }}
-  >
-    Contacto
-  </button>
-
-  <NavLink
-    to="/auth/login"
-    className="mt-6 bg-[#34A0A4] hover:bg-[#2e8587] transition text-white text-[16px] px-5 py-2 rounded-full text-center"
-    onClick={alternarMenu}
-  >
-    Iniciar sesión
-  </NavLink>
-</section>
+      {/* Menú desplegable para móvil y tablet */}
+      <section className={`lg:hidden fixed top-0 left-0 w-full h-full bg-black/90 flex flex-col items-center justify-center transition-transform ${flag ? 'translate-x-0' : '-translate-x-full'}`}>
+        <button className="absolute top-6 right-6 text-white" onClick={handleFlag}>
+          <X size={28} />
+        </button>
+        <NavLink to="/" className="py-3 text-white text-xl" onClick={handleFlag}>Inicio</NavLink>
+        <NavLink to="/rooms" className="py-3 text-white text-xl" onClick={handleFlag}>Habitaciones</NavLink>
+        <NavLink to="/services" className="py-3 text-white text-xl" onClick={handleFlag}>Servicios</NavLink>
+        <NavLink to="about us" className="py-3 text-white text-xl" onClick={handleFlag}>Nosotros</NavLink>
+        <NavLink to="/contact" className="py-3 text-white text-xl" onClick={handleFlag}>Contacto</NavLink>
+        <NavLink
+          to="/auth/login"
+          className="mt-6 bg-white/40 hover:bg-white/60 transition text-white text-[16px] px-5 py-2 rounded-full text-center"
+          onClick={handleFlag}
+        >
+          Iniciar sesión
+        </NavLink>
+      </section>
 
 
-      {/* Panel de contacto */}
-      <Contact flag={contactoAbierto} handleFlag={alternarContacto} />
+      
+      <PanelContacto flag={flag} handleFlag={handleFlag} />
     </header>
+
+    
   );
 };
