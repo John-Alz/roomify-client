@@ -1,14 +1,18 @@
-import React, { useState } from "react";
-import { NavLink } from 'react-router-dom';
+import React from "react";
+import { NavLink } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { PanelContacto } from '../../Contact/components/PanelContacto';
 import { useFlag } from "../hooks/UseFlag";
+import { Contact } from "./Contact";
 
 export const Navbar = () => {
   
 
   const { handleFlag, flag } = useFlag()
 
+  // Estado para controlar si el panel de contacto está abierto
+  const { flag: contactoAbierto, handleFlag: alternarContacto } = useFlag();
+  
   return (
     <header className="absolute top-0 left-0 w-full bg-transparent font-dm-sans tracking-wide z-50 px-4 sm:px-6 md:px-10 lg:px-20">
       <div className="w-full flex items-center justify-between h-[80px] py-2">
@@ -43,10 +47,10 @@ export const Navbar = () => {
         </aside>
 
         {/* Menú hamburguesa (móvil y tablet) */}
-        <button className="lg:hidden text-white" onClick={handleFlag}>
-          {flag ? <X size={28} /> : <Menu size={28} />}
-        </button>
-      </div>
+        <button className="lg:hidden text-white" onClick={alternarMenu}>
+  {menuAbierto ? <X size={28} /> : <Menu size={28} />}
+</button>
+</div>
 
       {/* Menú desplegable para móvil y tablet */}
       <section className={`lg:hidden fixed top-0 left-0 w-full h-full bg-black/90 flex flex-col items-center justify-center transition-transform ${flag ? 'translate-x-0' : '-translate-x-full'}`}>
