@@ -3,8 +3,8 @@ import { AppRouter } from './routes/AppRouter'
 
 export const RoomifyApp = () => {
     return (
-        <>
-            <AppRouter />
-        </>
+        <div className='font-DMsams'>
+             <AppRouter />
+        </div>
     )
 }
