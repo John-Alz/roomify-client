@@ -84,7 +84,9 @@ export const LoginForm = () => {
                         }
                     </div>
                 </div>
-                <div className='flex justify-end my-2'><span>¿Olvidaste tu contraseña?</span></div>
+                <Link to={'/auth/form-recovery'}>
+                    <div className='flex justify-end my-2'><span>¿Olvidaste tu contraseña?</span></div>
+                </Link>
                 <button className='w-full py-2 px-3 rounded-lg text-xl bg-primary text-white cursor-pointer'>Iniciar sesión</button>
 
 

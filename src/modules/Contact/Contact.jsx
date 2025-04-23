@@ -6,7 +6,7 @@ export const Contact = () => {
 
   return (
     <>
-      <Navbar />
+      <Navbar textColor={"text-white"} />
 
       <PanelContacto flag={flag} handleFlag={handleFlag} />
 

@@ -1,7 +1,7 @@
 import { Star } from 'lucide-react'
 import React from 'react'
 
-export const CarouselCard = ({ room_images, room_rumber, room_type_name, rooms, bathRooms, room_price }) => {
+export const CarouselCard = ({ room_images, room_rumber, room_name, room_type_name, rooms, bathRooms, room_price }) => {
     return (
         <div className="flex flex-col items-start p-4 relative cursor-pointer">
             {/* Contenedor con estrella y puntaje */}
@@ -20,8 +20,8 @@ export const CarouselCard = ({ room_images, room_rumber, room_type_name, rooms, 
                 alt={room_rumber}
             />
 
-            <h3 className="text-2xl font-medium tracking-wide w-full mb-1">
-                {room_type_name}
+            <h3 className="text-lg font-medium tracking-wide w-full mb-1">
+                {room_name}
             </h3>
 
             <div className="w-full flex gap-3">

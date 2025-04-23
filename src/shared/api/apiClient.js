@@ -15,7 +15,7 @@ export const api = {
             let response = await apiClient.get(endpoint);
             return response.data;
         } catch (error) {
-            console.log(`Error en el get de las app: ${error}`);
+            console.log(`Error en el get de la app: ${error}`);
             throw new Error;
         }
     },
@@ -24,7 +24,7 @@ export const api = {
             let response = await apiClient.post(endpoint, data, credentials);
             return response;
         } catch (error) {
-            console.log(`Error en el post de las app: ${error}`);
+            console.log(`Error en el post de la app: ${error}`);
             throw new Error;
         }
     },

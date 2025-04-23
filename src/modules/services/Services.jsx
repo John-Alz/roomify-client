@@ -1,16 +1,16 @@
 import React from 'react';
 import { Footer, Hero, Navbar } from '../core/components';
-import { ServicesList } from '../Services/components/ServicesList';
+import { ServicesList } from './components/ServicesList';
 
 
 export const Services = () => {
     return (
         <div>
-            <Navbar />
+            <Navbar textColor={"text-white"} />
             {/* Pasamos la ruta de la imagen como prop al componente Hero */}
-            <Hero 
-                title="Verdaderamente Inolvidable" 
-                subtitle="Ofrecemos atención personalizada a cada detalle para que tu experiencia sea" 
+            <Hero
+                title="Verdaderamente Inolvidable"
+                subtitle="Ofrecemos atención personalizada a cada detalle para que tu experiencia sea"
                 image="/image.png" // Ruta correcta para la imagen (sin 'public')
             />
             <ServicesList />
