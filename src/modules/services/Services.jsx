@@ -1,5 +1,5 @@
 import React from 'react';
-import { Footer, Hero, Contact, Navbar } from '../core/components';
+import { Footer, Hero, Navbar } from '../core/components';
 import { ServicesList } from '../Services/components/ServicesList';
 
 
