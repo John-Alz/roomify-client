@@ -21,6 +21,7 @@ export const PanelContacto = ({ flag, handleFlag }) => {
           transform transition-transform duration-300 ease-in-out
           w-full sm:w-1/2
           min-w-[300px]
+          text-black
           ${flag ? "translate-x-0" : "translate-x-full"}
         `}
       >

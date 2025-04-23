@@ -3,10 +3,10 @@ import { Facebook, Twitter, Instagram } from "lucide-react";
 
 export const Footer = () => {
   return (
-    <footer className="bg-white font-dm-sans tracking-wide text-gray-800 pb-6 mt-10 mb-10">
+    <footer className="bg-[linear-gradient(0deg,rgba(255,245,235,1)_58%,rgba(255,255,255,1)_100%)] font-dm-sans tracking-wide text-gray-800 pb-6 mt-10 ">
       {/* Contenedor principal con un 80% de ancho siempre */}
       <div className="w-[85%] mx-auto py-10 px-4 sm:px-6 md:px-10 lg:px-0">
-        
+
         {/* Sección principal */}
         <div className="w-full flex flex-wrap justify-between gap-20">
           {/* Nombre y descripción */}
@@ -34,7 +34,7 @@ export const Footer = () => {
         {/* Derechos y redes sociales */}
         <div className="w-full flex flex-col sm:flex-row justify-between items-center gap-6 px-6 py-4">
           <p className="text-[#4D4D4D] text-xs">© Logo Hotel 2025. Derechos reservados</p>
-          
+
           <div className="flex flex-col sm:flex-row items-center gap-6">
             <p className="text-[#4D4D4D] text-xs">Encuéntranos en:</p>
             <div className="flex items-center gap-4">

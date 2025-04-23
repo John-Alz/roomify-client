@@ -43,7 +43,7 @@ export const PopularRooms = () => {
           {data?.content?.map((room) => (
             <SwiperSlide >
               <Link to={`/room/${room.id}`}>
-                <CarouselCard room_images={room.room_images} room_rumber={room.room_rumber} room_type_name={room.room_type_name} rooms={room.rooms} bathRooms={room.bathRooms} room_price={room.room_price} />
+                <CarouselCard room_images={room.room_images} room_rumber={room.room_rumber} room_name={room.room_name} room_type_name={room.room_type_name} rooms={room.rooms} bathRooms={room.bathRooms} room_price={room.room_price} />
               </Link>
             </SwiperSlide>
 

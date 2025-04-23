@@ -21,7 +21,7 @@ export const AboutStats = () => {
           <p className="text-gray-500">Miembros del equipo</p>
         </div>
       </div>
-      <div className="h-1 bg-[#34A0A4] mt-8 w-3/4 mx-auto rounded-full"></div>
+      <div className="h-1 bg-[#34A0A4] mt-8 mx-auto rounded-full w-full"></div>
     </section>
   );
 };
