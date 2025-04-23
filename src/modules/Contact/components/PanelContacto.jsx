@@ -1,7 +1,7 @@
 import React from "react";
 import { X } from "lucide-react";
 
-export const Contact = ({ flag, handleFlag }) => {
+export const PanelContacto = ({ flag, handleFlag }) => {
   return (
     <>
       {flag && (
@@ -24,7 +24,7 @@ export const Contact = ({ flag, handleFlag }) => {
           ${flag ? "translate-x-0" : "translate-x-full"}
         `}
       >
-        
+        {/* Botón de cierre */}
         <button
           className="absolute top-4 left-4 p-2 text-black hover:bg-gray-200 rounded"
           onClick={handleFlag}
@@ -33,7 +33,7 @@ export const Contact = ({ flag, handleFlag }) => {
           <X size={24} />
         </button>
 
-       
+        {/* Título */}
         <h2 className="text-2xl font-semibold text-left mt-15">
           Te ayudamos a gestionar tu reserva
         </h2>

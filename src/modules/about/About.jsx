@@ -1,6 +1,8 @@
 import React from 'react';
-import { Navbar, Hero, Contact, Footer } from '../core/components';
-import { AboutPage } from '../about/components/AboutPage';
+import { Navbar, Hero, Footer } from '../core/components';
+import { AboutPage } from './pages/AboutPage';
+
+
 
 export const About = () => {
   return (
