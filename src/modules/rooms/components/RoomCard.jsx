@@ -44,7 +44,7 @@ export const RoomCard = () => {
             <div className="flex flex-col items-end justify-between text-right text-gray-800">
               <div>
                 <p className="text-sm font-semibold text-emerald-600">{hotel.ratingText}</p>
-                <p className="text-xs text-gray-400">{hotel.reviews} visitas</p>
+                <p className="text-xs text-gray-400">{hotel.reviews} hospedajes</p>
                 <span className="text-sm font-semibold bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded-full mt-1 inline-block">
                   {hotel.rating}
                 </span>

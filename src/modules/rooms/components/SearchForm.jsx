@@ -1,18 +1,11 @@
 import React from 'react';
-import {
-  MapPin,
-  CalendarCheck2,
-  CalendarX2,
-  Users,
-  ArrowLeft,
-  ChevronDown,
-} from 'lucide-react';
-import { Link } from 'react-router-dom'; // Importar Link en lugar de useNavigate
-
+import { CalendarCheck2,CalendarX2,Users,ArrowLeft,ChevronDown,} from 'lucide-react';
+ 
+import { Link } from 'react-router-dom'; 
 export const SearchForm = () => {
   return (
     <div className="space-y-4 pl-14">
-      {/* Botón de volver usando Link */}
+      
       <Link to="/" className="flex items-left space-x-1 cursor-pointer">
         <ArrowLeft className="text-gray-600 transform -translate-x-2 translate-y-1" size={24} />
       </Link>
@@ -21,7 +14,6 @@ export const SearchForm = () => {
         Buscar Habitación
       </h2>
 
-      {/* Check-in */}
       <label htmlFor="checkin" className="text-sm font-medium text-gray-600">
         Fecha de Check-in
       </label>
@@ -35,7 +27,7 @@ export const SearchForm = () => {
         />
       </div>
 
-      {/* Check-out */}
+      
       <label htmlFor="checkout" className="text-sm font-medium text-gray-600">
         Fecha de Check-out
       </label>
@@ -49,7 +41,7 @@ export const SearchForm = () => {
         />
       </div>
 
-      {/* Huéspedes */}
+      
       <label htmlFor="guests" className="text-sm font-medium text-gray-600">
         Número de Huéspedes
       </label>
@@ -64,7 +56,6 @@ export const SearchForm = () => {
         />
       </div>
 
-      {/* Tipo de habitación */}
       <label htmlFor="room-type" className="text-sm font-medium text-gray-600">
         Tipo de Habitación
       </label>
@@ -80,7 +71,7 @@ export const SearchForm = () => {
         <ChevronDown className="w-4 h-4 absolute right-4 top-1/2 -translate-y-1/2 text-gray-500 pointer-events-none" />
       </div>
 
-      {/* Botón de búsqueda */}
+      
       <button className="w-full bg-[#34a0a4] text-white py-3 rounded-full mt-4 hover:bg-[#2f9397] transition">
         Buscar
       </button>

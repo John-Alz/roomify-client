@@ -17,13 +17,13 @@ export const RoomListPage = () => {
             <div className="w-full border-t-2 border-gray-100 mt-22"></div>
 
             <div className='w-[100%] m-auto pt-10 flex'>
-                {/* Contenedor izquierdo (formulario completo) */}
+                
                 <div className="w-[50%] flex flex-col gap-4 pr-10">
                     <SearchForm />
                     <LateralFilters />
                 </div>
 
-                {/* Contenedor derecho (más protagonista) */}
+                
                 <div className="w-[100%] pl-10">
                     <ResultHeader />
                     <RoomCard />
