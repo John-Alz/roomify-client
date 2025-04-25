@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';  
 import { mockListRoom } from '../mock/mockListRoom';
 
 export const RoomCard = () => {
@@ -7,14 +8,16 @@ export const RoomCard = () => {
       {mockListRoom.map(hotel => (
         <div
           key={hotel.id}
-          className="flex gap-4 border border-gray-200 rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden bg-white"
+          className="flex flex-col sm:flex-row gap-4 border border-gray-200 rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden bg-white"
         >
-          <div className="p-4 pr-0">
-            <img
-              src={hotel.image}
-              alt={hotel.name}
-              className="w-50 h-44 object-cover rounded-xl" 
-            />
+          <div className="p-4 pr-0 sm:px-4 md:px-6 lg:px-4">
+            <div className="w-full sm:w-50 h-44 overflow-hidden rounded-xl">
+              <img
+                src={hotel.image}
+                alt={hotel.name}
+                className="w-full h-full object-cover" 
+              />
+            </div>
           </div>
 
           <div className="flex flex-1 justify-between p-4">
@@ -52,9 +55,11 @@ export const RoomCard = () => {
               <div>
                 <p className="text-xl font-bold text-gray-900">${hotel.price}</p>
                 <p className="text-xs text-gray-500">3 noches, 2 personas</p>
-                <button className="bg-[#34a0a4] cursor-pointer hover:bg-[#2b7d7d] transition text-white text-sm px-4 py-1.5 mt-2 rounded-full shadow-sm">
-                  Ver opciones de reserva
-                </button>
+                <Link to={`/room/${hotel.id}`}>  
+                  <button className="bg-[#34a0a4] cursor-pointer hover:bg-[#2b7d7d] transition text-white text-sm px-4 py-1.5 mt-2 rounded-full shadow-sm">
+                    Ver opciones de reserva
+                  </button>
+                </Link>
               </div>
             </div>
           </div>

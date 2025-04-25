@@ -2,8 +2,7 @@ import React from 'react';
 
 export const LateralFilters = () => {
   return (
-    <div className="mt-6 bg-white p-6 pl-15 rounded-lg ">
-      
+    <div className="px-4 sm:px-6 md:px-10 lg:px-14 max-w-xl w-full mx-auto space-y-4">
       <div className="mb-8">
         <h3 className="text-lg font-semibold text-gray-800 mb-4">Filtros Populares</h3>
         <div className="space-y-3">
@@ -22,7 +21,6 @@ export const LateralFilters = () => {
         </div>
       </div>
 
-      
       <div className="mb-8">
         <h3 className="text-lg font-semibold text-gray-800 mb-4">Precio por Noche</h3>
         <div className="space-y-3">
@@ -38,7 +36,6 @@ export const LateralFilters = () => {
         </div>
       </div>
 
-      
       <div className="mb-8">
         <h3 className="text-lg font-semibold text-gray-800 mb-4">Características de la Habitación</h3>
         <div className="space-y-3">

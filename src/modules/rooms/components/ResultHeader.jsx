@@ -3,13 +3,13 @@ import { ChevronDown } from 'lucide-react';
 
 export const ResultHeader = () => {
   return (
-    <div className="flex justify-between items-center mb-6">
-      <div className="ml-4"> 
+    <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 px-4">
+      <div className="mb-4 sm:mb-0">
         <span className="text-sm text-gray-500">140 resultados de búsqueda</span>
         <p className="text-xl font-semibold">Habitación doble, 9 - 12 de diciembre, 2 huéspedes, 1 cama doble</p>
       </div>
-      <div className="relative mr-4"> 
-        <select className="appearance-none border rounded-full px-4 py-2 text-sm pr- border-gray-300 focus:outline-none focus:ring-1 focus:ring-gray-400">
+      <div className="relative">
+        <select className="appearance-none border rounded-full px-4 py-2 text-sm pr-10 border-gray-300 focus:outline-none focus:ring-1 focus:ring-gray-400">
           <option value="recommended">Ordenar por</option>
           <option value="priceLow">Precio (de menor a mayor)</option>
           <option value="priceHigh">Precio (de mayor a menor)</option>
