@@ -6,6 +6,7 @@ import { ServicesRoutes } from "../modules/services/routes/ServicesRoutes";
 import { AboutUsRoutes } from "../modules/about/routes/AboutUsRoutes";
 import { ContactRoutes } from "../modules/Contact/routes/ContactRoutes";
 import { RoomDetailRoutes } from "../modules/rooms/routes/RoomDetailRoutes";
+import { RoomListRoutes } from "../modules/rooms/routes/RoomListRoutes";
 
 export const AppRouter = () => {
   return (
@@ -18,6 +19,7 @@ export const AppRouter = () => {
       <Route path="/about-us/*" element={<AboutUsRoutes />} />
       <Route path="/contact/" element={<ContactRoutes />} />
       <Route path="/room/:id" element={<RoomDetailRoutes />} />
+      <Route path="/rooms/" element={<RoomListRoutes />} />
     </Routes>
   );
 };
