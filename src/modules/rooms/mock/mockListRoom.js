@@ -1,13 +1,13 @@
 export const mockListRoom = [
   {
     id: 1,
-    name: 'Hotel Norrebro',
-    distance: '0.4 km del centro de la ciudad',
+    name: 'Habitación Deluxe King',
+    distance: 'Amplia habitación de 35 m²',
     cancellation: 'Cancelación gratuita',
     breakfast: true,
     roomType: 'Habitación cómoda',
     bed: '1 cama king size',
-    bathroom: '1 baño',
+    bathroom: '1 baño privado',
     tags: ['#Oferta especial', '#Popular'],
     rating: '9.6',
     ratingText: 'Excelente',
@@ -17,13 +17,13 @@ export const mockListRoom = [
   },
   {
     id: 2,
-    name: 'Hotel Mitte',
-    distance: '1.7 km del centro de la ciudad',
+    name: 'Habitación Estándar Queen',
+    distance: 'Habitación acogedora de 25 m²',
     cancellation: 'Cancelación gratuita',
     breakfast: false,
     roomType: 'Habitación estándar',
     bed: '1 cama queen size',
-    bathroom: '1 baño',
+    bathroom: '1 baño privado',
     tags: ['#Oferta especial'],
     rating: '9.2',
     ratingText: 'Muy bueno',
@@ -33,13 +33,13 @@ export const mockListRoom = [
   },
   {
     id: 3,
-    name: 'Hotel ZOO Copenhague',
-    distance: '2.0 km del centro de la ciudad',
+    name: 'Suite Premium King',
+    distance: 'Suite elegante de 45 m²',
     cancellation: 'Cancelación gratuita',
     breakfast: false,
     roomType: 'Habitación premium',
     bed: '1 cama king size',
-    bathroom: '1 baño',
+    bathroom: '1 baño de lujo',
     tags: ['#Popular'],
     rating: '8.0',
     ratingText: 'Bueno',
@@ -49,13 +49,13 @@ export const mockListRoom = [
   },
   {
     id: 4,
-    name: 'Hotel ZOO Copenhague',
-    distance: '2.0 km del centro de la ciudad',
+    name: 'Suite Ejecutiva King',
+    distance: 'Suite amplia de 50 m²',
     cancellation: 'Cancelación gratuita',
     breakfast: false,
     roomType: 'Habitación premium',
     bed: '1 cama king size',
-    bathroom: '1 baño',
+    bathroom: '1 baño privado',
     tags: ['#Popular'],
     rating: '8.0',
     ratingText: 'Bueno',
@@ -63,6 +63,4 @@ export const mockListRoom = [
     price: 220,
     image: 'public/room-1.jpeg'
   }
- 
 ];
-
