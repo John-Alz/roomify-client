@@ -13,7 +13,6 @@ export const ResultHeader = () => {
           <option value="recommended">Ordenar por</option>
           <option value="priceLow">Precio (de menor a mayor)</option>
           <option value="priceHigh">Precio (de mayor a menor)</option>
-          <option value="rating">Valoración</option>
         </select>
         <ChevronDown className="w-4 h-4 absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 pointer-events-none" />
       </div>

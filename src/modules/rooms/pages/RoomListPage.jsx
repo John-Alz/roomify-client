@@ -1,13 +1,18 @@
 import React from 'react';
 import { Footer, Navbar } from '../../core/components';
-import { SearchForm, RoomCard, ResultHeader, LateralFilters, PaginationRoom } from '../components';
+import { SearchForm,  ResultHeader, LateralFilters, PaginationRoom } from '../components';
+import { RoomList } from '../components/RoomList';
 
 export const RoomListPage = () => {
+
+
   const colorsHeader = {
     textColor: "text-black",
     borderColor: "hover:border-black",
     bgOpacity: "bg-black/50",
   };
+  
+  
 
   return (
     <div>
@@ -25,7 +30,7 @@ export const RoomListPage = () => {
 
         <div className="w-full md:w-[100%] md:pl-10 order-2 md:order-none">
           <ResultHeader />
-          <RoomCard />
+          <RoomList />
           <PaginationRoom />
         </div>
       </div>

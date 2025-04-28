@@ -20,7 +20,7 @@ export const PopularRooms = () => {
 
   const swiperRef = useRef(null);
 
-  const { data } = useFetch("http://localhost:8080/api/v1/rooms?page=0&size=20")
+  const { data } = useFetch("http://localhost:8080/api/v1/rooms?page=0&size=10&orderAsc=true")
   console.log(data);
 
 
