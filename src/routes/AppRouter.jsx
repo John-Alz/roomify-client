@@ -8,6 +8,7 @@ import { ContactRoutes } from "../modules/Contact/routes/ContactRoutes";
 import { RoomDetailRoutes } from "../modules/rooms/routes/RoomDetailRoutes";
 import { AdminLayout } from "../modules/layouts/AdminLayout";
 import { Test } from "../modules/core/components/Test";
+import { RoomsRoutes } from "../modules/rooms/routes/RoomsRoutes";
 
 export const AppRouter = () => {
   return (
@@ -19,7 +20,7 @@ export const AppRouter = () => {
       <Route path="/services/*" element={<ServicesRoutes />} />
       <Route path="/about-us/*" element={<AboutUsRoutes />} />
       <Route path="/contact/" element={<ContactRoutes />} />
-      <Route path="/room/:id" element={<RoomDetailRoutes />} />
+      <Route path="/rooms/*" element={<RoomsRoutes />} />
 
       {/* Admin layout routes */}
 

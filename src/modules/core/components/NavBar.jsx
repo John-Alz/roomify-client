@@ -25,7 +25,7 @@ export const Navbar = ({ colors }) => {
 
         <nav className="hidden lg:flex flex-wrap gap-6 md:gap-8">
           <NavLink to="/" className={({ isActive }) => ` text-[14px] sm:text-[16px] border-b border-transparent ${colors ? colors.borderColor : "hover:border-white"} transition duration-300 ${isActive ? 'border-b border-white' : ''}`}>Inicio</NavLink>
-          <NavLink to="/rooms" className={({ isActive }) => `text-[14px] sm:text-[16px] border-b border-transparent ${colors ? colors.borderColor : "hover:border-white"} transition duration-300 ${isActive ? 'border-b border-white' : ''}`}>Habitaciones</NavLink>
+          <NavLink to="/rooms/list" className={({ isActive }) => `text-[14px] sm:text-[16px] border-b border-transparent ${colors ? colors.borderColor : "hover:border-white"} transition duration-300 ${isActive ? 'border-b border-white' : ''}`}>Habitaciones</NavLink>
           <NavLink to="/services" className={({ isActive }) => ` text-[14px] sm:text-[16px] border-b border-transparent ${colors ? colors.borderColor : "hover:border-white"} transition duration-300 ${isActive ? 'border-b border-white' : ''}`}>Servicios</NavLink>
           <NavLink to="/about-us" className={({ isActive }) => ` text-[14px] sm:text-[16px] border-b border-transparent ${colors ? colors.borderColor : "hover:border-white"} transition duration-300 ${isActive ? 'border-b border-white' : ''}`}>Nosotros</NavLink>
 
