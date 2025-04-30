@@ -14,15 +14,21 @@ import { Navigation } from 'swiper/modules';
 import { useRef } from "react";
 import { useFetch } from "../../core/hooks/useFetch";
 import { CarouselCard } from "./CarouselCard";
+import useRoomStore from "../../rooms/store/useRoomStore";
+import { useEffect } from "react";
 
 
 export const PopularRooms = () => {
 
+
   const swiperRef = useRef(null);
 
-  const { data } = useFetch("http://localhost:8080/api/v1/rooms?page=0&size=20")
-  console.log(data);
+  const rooms = useRoomStore(state => state.rooms);
+  const fetchRooms = useRoomStore(state => state.fetchRooms);
 
+  useEffect(() => {
+    fetchRooms()
+  }, [])
 
 
   return (
@@ -40,7 +46,7 @@ export const PopularRooms = () => {
           modules={[Navigation]}
           onSwiper={(swiper) => (swiperRef.current = swiper)}
         >
-          {data?.content?.map((room) => (
+          {rooms?.content?.map((room) => (
             <SwiperSlide >
               <Link to={`/room/${room.id}`}>
                 <CarouselCard room_images={room.room_images} room_rumber={room.room_rumber} room_name={room.room_name} room_type_name={room.room_type_name} rooms={room.rooms} bathRooms={room.bathRooms} room_price={room.room_price} />
