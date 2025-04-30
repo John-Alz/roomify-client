@@ -1,10 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';  
 import { mockListRoom } from '../mock/mockListRoom';
-import { Bed, Bath } from 'lucide-react'; // <- Se agregan los iconos aquí
+import { Bed, Bath } from 'lucide-react'; 
 
 export const RoomCard = ({item}) => {
   return (
+
+    <Link to={`/rooms/room/${item.id}`} >
     <div className="space-y-6 p-4 max-w-4xl mx-auto">
       
         <div
@@ -67,17 +69,19 @@ export const RoomCard = ({item}) => {
               <div>
                 <p className="text-xl font-bold text-gray-900">${item.room_price}</p>
                 <p className="text-xs text-gray-500">3 noches, 2 personas</p>
-                <Link to={`/room/${item.id}`}>  
+                
                 <button className="bg-[#34a0a4] cursor-pointer hover:bg-[#2b7d7d] transition text-white text-sm px-8 py-2 mt-2 rounded-full shadow-sm min-w-[240px]">
   Ver opciones de reserva
 </button>
 
-                </Link>
+                
               </div>
             </div>
           </div>
         </div>
     
     </div>
+
+    </Link>
   );
 };

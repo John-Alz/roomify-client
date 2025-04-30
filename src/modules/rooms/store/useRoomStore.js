@@ -9,7 +9,7 @@ const useRoomStore = create((set) => ({
     error: null,
 
     fetchRooms: async () => {
-        const data = await api.get('/api/v1/rooms?page=0&size=10&orderAsc=true');
+        const data = await api.get('/api/v1/rooms?page=0&size=20&orderAsc=true');
         if (data) set({ rooms: data })
     },
 
