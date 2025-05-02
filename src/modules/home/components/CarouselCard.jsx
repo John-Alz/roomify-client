@@ -21,7 +21,7 @@ export const CarouselCard = ({ room_images, room_rumber, room_name, room_type_na
             />
 
             <h3 className="text-lg font-medium tracking-wide w-full mb-1">
-                {room_name}
+                {room_name.slice(0, 20)}...
             </h3>
 
             <div className="w-full flex gap-3">

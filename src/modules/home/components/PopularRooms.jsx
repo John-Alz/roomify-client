@@ -30,6 +30,8 @@ export const PopularRooms = () => {
     fetchRooms()
   }, [])
 
+  console.log(rooms);
+
 
   return (
     <section className="py-[59px] relative max-w-[84%] mx-auto">
