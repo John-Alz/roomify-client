@@ -1,0 +1,36 @@
+export const mockTableListRoom = [
+    {
+      id: 1,
+      no: '5674',
+      name: 'Suite Deluxe',
+      type: 'Deluxe',
+      price: '$200.000',
+      capacity: 2,
+      beds: 1,
+      status: 'Disponible',
+      image: '/room-3.webp', 
+    },
+    {
+      id: 2,
+      no: '5674',
+      name: 'Habitación Familiar',
+      type: 'Familiar',
+      price: '$150.000',
+      capacity: 2,
+      beds: 1,
+      status: 'Reservada',
+      image: '/room-1.jpeg', 
+    },
+    {
+      id: 3,
+      no: '5674',
+      name: 'Habitación Ejecutiva',
+      type: 'Sencilla',
+      price: '$80.000',
+      capacity: 2,
+      beds: 1,
+      status: 'Limpieza',
+      image: '/room-2.webp',
+    },
+  ];
+  
