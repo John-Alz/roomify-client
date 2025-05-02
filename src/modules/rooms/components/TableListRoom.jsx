@@ -56,7 +56,7 @@ export function TableListRoom({ item }) {
       </td>
 
       <td className="p-2 pt-8">
-        <TableActionButtons roomId={item.id} />
+        <TableActionButtons />
       </td>
     </tr>
   );
