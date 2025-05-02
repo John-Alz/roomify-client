@@ -47,7 +47,7 @@ export function TablePaginationRoom() {
           onClick={handleFlagNext}
           className="w-10 h-10 rounded-full text-blue-800 text-2xl cursor-pointer"
         >
-          <ChevronRight size={24} className="stroke-2" />
+          <ChevronRight size={24}  />
         </button>
       </div>
     </div>

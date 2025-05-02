@@ -1,14 +1,12 @@
 import React from 'react';
-
-import { TableHeaderListRoom, TableListRoom,  } from '../components'; 
-import { TableList } from '../components/TableList';
+import { TableHeaderListRoom } from '../components';
+import { TableRoom } from '../components/TableRoom';
 
 export function RoomTablePage() {
   return (
-    <div >
+    <div>
       <TableHeaderListRoom />
-      <TableListRoom />
-      <TableList />
+      <TableRoom />
     </div>
   );
 }

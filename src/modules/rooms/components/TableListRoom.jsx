@@ -1,7 +1,6 @@
 import { Users } from 'lucide-react';
 import { TableActionButtons } from './TableActionButtons';
 
-// Colores de estado
 const statusColors = {
   AVAILABLE: 'bg-green-500',
   RESERVED: 'bg-red-500',
