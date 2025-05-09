@@ -9,7 +9,10 @@ import { RoomDetailRoutes } from "../modules/rooms/routes/RoomDetailRoutes";
 import { AdminLayout } from "../modules/layouts/AdminLayout";
 import { Test } from "../modules/core/components/Test";
 import { RoomsRoutes } from "../modules/rooms/routes/RoomsRoutes";
-import { RoomTablePage } from "../modules/rooms/pages/RoomTablePage";
+
+import { RoomFormRoutes } from "../modules/rooms/routes/RoomFormsRoutes";
+
+
 
 export const AppRouter = () => {
   return (
@@ -28,7 +31,7 @@ export const AppRouter = () => {
       <Route path="/admin" element={<AdminLayout />} >
         <Route index element={<Navigate to='dashboard' replace />} />
         <Route path="dashboard" element={<Test />} />
-        <Route path="habitaciones" element={<RoomTablePage />} />
+        <Route path="habitaciones/*" element={<RoomFormRoutes />} />
         <Route path="reservas" element={<Test />} />
         <Route path="usuarios" element={<Test />} />
         <Route path="tipos-habitacion" element={<Test />} />

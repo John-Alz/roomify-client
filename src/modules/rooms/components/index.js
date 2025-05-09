@@ -7,3 +7,6 @@ export { TableActionButtons } from "./TableActionButtons";
 export { TableHeaderListRoom } from "./TableHeaderListRoom";
 export { TableListRoom } from "./TableListRoom";
 export { TablePaginationRoom } from "./TablePaginationRoom";
+export { FormCreateRoom } from "./FormCreateRoom";
+export { FormEditRoom } from "./FormEditRoom";
+export { FormDeleteRoom } from "./FormDeleteRoom";
